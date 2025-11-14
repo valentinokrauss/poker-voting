@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <title>Planning Poker</title>
@@ -10,31 +10,31 @@
   <div class="app">
     <header class="header">
       <h1>Planning Poker</h1>
-      <p class="subtitle">Pequeña app de poker voting</p>
+      <p class="subtitle">Small planning poker app</p>
     </header>
 
     <main>
       <section id="setup-section" class="card">
-        <h2>Crear o unirse a una sala</h2>
+        <h2>Create or join a room</h2>
         <div class="field">
-          <label for="name-input">Tu nombre</label>
-          <input id="name-input" type="text" placeholder="Ej: Ana" />
+          <label for="name-input">Your name</label>
+          <input id="name-input" type="text" placeholder="Ex: Ana" />
         </div>
 
         <div class="buttons-row">
           <button id="create-room-btn" class="btn primary">
-            Crear nueva sala
+            Create new room
           </button>
         </div>
 
         <div class="field">
-          <label for="room-id-input">ID de sala existente</label>
-          <input id="room-id-input" type="text" placeholder="Ej: ABC123" />
+          <label for="room-id-input">Existing room ID</label>
+          <input id="room-id-input" type="text" placeholder="Ex: ABC123" />
         </div>
 
         <div class="buttons-row">
           <button id="join-room-btn" class="btn">
-            Unirse a sala
+            Join room
           </button>
         </div>
 
@@ -44,18 +44,18 @@
       <section id="room-section" class="card hidden">
         <div class="room-header">
           <div>
-            <h2>Sala: <span id="room-id-label"></span></h2>
-            <p>Comparte este link con otros participantes:</p>
+            <h2>Room: <span id="room-id-label"></span></h2>
+            <p>Share this link with other participants:</p>
             <code id="share-link"></code>
           </div>
           <div class="host-controls">
-            <button id="reveal-btn" class="btn warn">Mostrar votos</button>
+            <button id="reveal-btn" class="btn warn">Reveal votes</button>
             <button id="reset-btn" class="btn secondary">Reset</button>
           </div>
         </div>
 
         <div class="voting-area">
-          <h3>Tu voto</h3>
+          <h3>Your vote</h3>
           <div class="vote-buttons">
             <button class="vote-btn" data-value="2">2</button>
             <button class="vote-btn" data-value="3">3</button>
@@ -63,11 +63,11 @@
             <button class="vote-btn" data-value="8">8</button>
             <button class="vote-btn" data-value="13">13</button>
           </div>
-          <p id="your-vote-label" class="muted">Aún no has votado.</p>
+          <p id="your-vote-label" class="muted">You haven't voted yet.</p>
         </div>
 
         <div class="participants">
-          <h3>Participantes</h3>
+          <h3>Participants</h3>
           <ul id="participants-list"></ul>
         </div>
       </section>
